@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imersão Vibe Coding · Do Zero ao SaaS com IA em 3 Dias | INEMA.CLUB</title>
+<meta name="description" content="Imersão presencial de 3 dias: construa um SaaS completo com agentes de IA, deploy e monetização. Vagas limitadas a 20 pessoas.">
+<!-- ====================================================================
+     CONFIG — EDITE AQUI (links de pagamento Asaas, datas e local)
+     Padrão de pagamento igual ao inema.vip: link de checkout do Asaas
+     no href do botão (https://www.asaas.com/c/XXXX).
+     - INDIVIDUAL: cobrança de R$ 3.000
+     - DUPLA (2+): cobrança de R$ 2.700/pessoa  (use o campo "discount"
+       do Asaas ou um link separado por pessoa adicional)
+==================================================================== -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode:'class', theme:{ extend:{
+    colors:{ primary:'#FACC15', dark:{900:'#0b0f1a',800:'#111827',700:'#1f2937',600:'#374151'} },
+    fontFamily:{ sans:['Inter','sans-serif'] }
+  }}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  html,body{font-family:'Inter',sans-serif;scroll-behavior:smooth}
+  body{background:#0b0f1a}
+  .mesh{background:
+    radial-gradient(50% 50% at 15% 10%, rgba(250,204,21,.12), transparent 60%),
+    radial-gradient(50% 50% at 85% 0%, rgba(56,189,248,.10), transparent 55%),
+    radial-gradient(60% 60% at 50% 100%, rgba(168,85,247,.10), transparent 60%);}
+  .grid-bg{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px}
+  @keyframes pulseDot{0%,100%{opacity:1}50%{opacity:.35}}
+  .live-dot{animation:pulseDot 1.6s ease-in-out infinite}
+  .cta{box-shadow:0 10px 40px -10px rgba(250,204,21,.6)}
+  .cta:hover{transform:translateY(-2px)}
+  .cta{transition:transform .15s ease, box-shadow .15s ease}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  .floaty{animation:floaty 5s ease-in-out infinite}
+</style>
+</head>
+<body class="bg-dark-900 text-neutral-100 antialiased">
+
+<!-- TOPBAR ESCASSEZ -->
+<div class="w-full bg-primary text-black text-center text-sm font-bold py-2 px-4">
+  ⚡ Turma limitada a <span class="underline">20 vagas</span> · oferta de lançamento <span class="line-through opacity-60">R$ 4.800</span> → <span class="font-extrabold">R$ 3.000</span>
+</div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-dark-900/85 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2 font-extrabold">🚀 <span>Imersão Vibe Coding</span></a>
+    <a href="#oferta" class="hidden sm:inline-flex cta bg-primary text-black font-bold text-sm px-4 py-2 rounded-lg">Garantir vaga</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative overflow-hidden border-b border-white/10">
+  <div class="absolute inset-0 mesh"></div>
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="relative max-w-6xl mx-auto px-5 py-20 sm:py-28 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+      Imersão presencial · 3 dias · 6 trilhas
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-black leading-[1.05] tracking-tight mb-5">
+      Do <span class="text-primary">Zero ao SaaS</span> com IA<br class="hidden sm:block"> em 3 dias.
+    </h1>
+    <p class="text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto mb-4">
+      Construa um SaaS funcional com agentes de IA, deploy e monetização. Da mentalidade ao produto publicado — ao vivo, do seu lado.
+    </p>
+    <p class="text-neutral-400 text-sm mb-9">
+      📍 Itaguaí — RJ · Rua Prefeito José Maria de Brito, 251 &nbsp;·&nbsp; <!-- EDITAR DATAS --><span class="text-neutral-300 font-semibold">Próxima turma — datas a confirmar</span>
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+      <a href="#oferta" class="cta bg-primary text-black font-extrabold px-8 py-4 rounded-xl text-lg">Quero minha vaga →</a>
+      <a href="#construir" class="px-6 py-4 rounded-xl border border-white/15 text-neutral-200 hover:bg-white/5 font-semibold">Ver o que vou construir</a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto mt-14">
+      <div class="bg-white/5 border border-white/10 rounded-xl p-4 floaty"><div class="text-2xl font-black text-primary">3</div><div class="text-xs text-neutral-400">dias intensos</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-4 floaty" style="animation-delay:.4s"><div class="text-2xl font-black text-primary">6</div><div class="text-xs text-neutral-400">trilhas / 36 tópicos</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-4 floaty" style="animation-delay:.8s"><div class="text-2xl font-black text-primary">20</div><div class="text-xs text-neutral-400">vagas no total</div></div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-4 floaty" style="animation-delay:1.2s"><div class="text-2xl font-black text-primary">1</div><div class="text-xs text-neutral-400">SaaS publicado</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- DOR / PROMESSA -->
+<section class="max-w-4xl mx-auto px-5 py-16 text-center">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-4">Você não precisa de mais um curso gravado pra assistir e esquecer.</h2>
+  <p class="text-neutral-300 text-lg">Precisa <strong class="text-primary">construir de verdade</strong>, com acompanhamento, e sair com um produto rodando em produção. É exatamente isso que acontece nesses 3 dias.</p>
+</section>
+
+<!-- O QUE VAI CONSTRUIR -->
+<section id="construir" class="border-y border-white/10 bg-dark-800/40">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <h2 class="text-3xl font-bold text-center mb-3">🎯 O que você sai construindo</h2>
+    <p class="text-neutral-400 text-center mb-10 max-w-2xl mx-auto">Uma <strong class="text-primary">Plataforma SaaS de Assistentes com IA</strong> completa e funcional — não um slide, um produto.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <!-- itens -->
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Login e autenticação</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Dashboard interativo</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Agentes inteligentes</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Skills e ferramentas</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Upload multimodal</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Sistema multibot</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Pagamentos e planos</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Landing page</div>
+      <div class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-4"><span class="text-primary text-xl">✓</span> Deploy em produção</div>
+    </div>
+  </div>
+</section>
+
+<!-- JORNADA 3 DIAS -->
+<section class="max-w-6xl mx-auto px-5 py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">A jornada de 3 dias</h2>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="rounded-2xl border border-emerald-500/30 bg-gradient-to-b from-emerald-500/10 to-transparent p-6">
+      <div class="text-xs font-bold text-emerald-400 mb-2">DIA 1 · FUNDAÇÃO</div>
+      <h3 class="text-xl font-bold mb-2">Mentalidade & Arquitetura</h3>
+      <p class="text-neutral-300 text-sm">Como pensar projetos com IA, da ideia ao MVP. Estrutura base: pastas, APIs, contexto global e fluxo de execução.</p>
+    </div>
+    <div class="rounded-2xl border border-purple-500/30 bg-gradient-to-b from-purple-500/10 to-transparent p-6">
+      <div class="text-xs font-bold text-purple-400 mb-2">DIA 2 · PRODUTO & IA</div>
+      <h3 class="text-xl font-bold mb-2">Construção & Agentes</h3>
+      <p class="text-neutral-300 text-sm">Auth, dashboard, system prompts, upload multimodal e histórico. Multiagentes, orquestração, MCP e memória.</p>
+    </div>
+    <div class="rounded-2xl border border-rose-500/30 bg-gradient-to-b from-rose-500/10 to-transparent p-6">
+      <div class="text-xs font-bold text-rose-400 mb-2">DIA 3 · PRODUÇÃO</div>
+      <h3 class="text-xl font-bold mb-2">Multibots & Monetização</h3>
+      <p class="text-neutral-300 text-sm">Plataforma multibot, bots especialistas e canais. Segurança, pagamentos, landing e deploy. Seu SaaS no ar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DADOS -->
+<section class="border-y border-white/10 bg-dark-800/40">
+  <div class="max-w-5xl mx-auto px-5 py-16">
+    <h2 class="text-2xl font-bold text-center mb-10">📊 Por que Vibe Coding agora</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><div class="text-4xl font-black text-sky-400">92%</div><p class="text-neutral-400 text-sm mt-1">dos devs nos EUA usam IA no dia a dia</p></div>
+      <div><div class="text-4xl font-black text-sky-400">41%</div><p class="text-neutral-400 text-sm mt-1">do código global já é gerado por IA</p></div>
+      <div><div class="text-4xl font-black text-sky-400">42%</div><p class="text-neutral-400 text-sm mt-1">das empresas já têm agentes em produção</p></div>
+      <div><div class="text-4xl font-black text-sky-400">2030</div><p class="text-neutral-400 text-sm mt-1">Gartner prevê pricing por outcome em SaaS com IA</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta" class="max-w-3xl mx-auto px-5 py-20">
+  <div class="relative rounded-3xl border border-primary/40 bg-gradient-to-b from-primary/10 to-dark-800 p-8 sm:p-10 text-center overflow-hidden">
+    <div class="absolute -top-px left-1/2 -translate-x-1/2 bg-primary text-black text-xs font-extrabold px-4 py-1 rounded-b-lg">OFERTA DE LANÇAMENTO</div>
+    <h2 class="text-2xl sm:text-3xl font-bold mt-4 mb-2">Acesso à Imersão Presencial</h2>
+    <p class="text-neutral-300 mb-6">3 dias intensos em Itaguaí, RJ · acesso vitalício ao código-fonte, prompts e suporte.</p>
+
+    <div class="mb-1 text-neutral-400">De <span class="line-through">R$ 4.800</span> por apenas</div>
+    <div class="text-6xl font-black text-primary mb-1">R$ 3.000</div>
+    <div class="text-sm text-neutral-400 mb-6">à vista no Pix · ou parcelado no cartão</div>
+
+    <!-- CTA INDIVIDUAL · EDITAR href com o link Asaas (R$ 3.000) -->
+    <a href="https://www.asaas.com/c/SEU_LINK_INDIVIDUAL" class="cta block bg-primary text-black font-extrabold text-lg px-8 py-4 rounded-xl mb-4">Garantir minha vaga →</a>
+
+    <!-- DESCONTO DUPLA -->
+    <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
+      <div class="font-bold text-primary mb-1">Vem em dupla (ou mais) e pague menos</div>
+      <p class="text-neutral-300 mb-3">2 ou mais pessoas: <strong>R$ 2.700 por pessoa</strong> (economia de R$ 300 cada).</p>
+      <!-- CTA DUPLA · EDITAR href com o link Asaas (R$ 2.700/pessoa) -->
+      <a href="https://www.asaas.com/c/SEU_LINK_DUPLA" class="inline-block border border-primary/60 text-primary font-bold px-5 py-2.5 rounded-lg hover:bg-primary/10">Quero o valor de dupla →</a>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 text-xs text-neutral-400 mt-6">
+      <span>🔒 Pagamento via Asaas</span><span>💳 Pix · cartão · boleto</span><span>♾️ Acesso vitalício ao código</span>
+    </div>
+  </div>
+  <p class="text-center text-sm text-neutral-500 mt-4">Restam poucas vagas — a turma fecha em 20 participantes.</p>
+</section>
+
+<!-- FAQ -->
+<section class="max-w-3xl mx-auto px-5 pb-20">
+  <h2 class="text-2xl font-bold text-center mb-8">Perguntas frequentes</h2>
+  <div class="space-y-3">
+    <details class="group bg-white/5 border border-white/10 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Preciso saber programar? <span class="text-primary group-open:rotate-45 transition">+</span></summary><p class="text-neutral-300 text-sm mt-3">Não. A imersão é sobre construir com IA. Você aprende o método do zero — da mentalidade ao deploy.</p></details>
+    <details class="group bg-white/5 border border-white/10 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">É presencial mesmo? <span class="text-primary group-open:rotate-45 transition">+</span></summary><p class="text-neutral-300 text-sm mt-3">Sim, 100% presencial em Itaguaí, RJ. São 3 dias construindo lado a lado, com suporte direto.</p></details>
+    <details class="group bg-white/5 border border-white/10 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Quais as formas de pagamento? <span class="text-primary group-open:rotate-45 transition">+</span></summary><p class="text-neutral-300 text-sm mt-3">Cartão de crédito, Pix e boleto, processados pelo Asaas (gateway brasileiro regularizado).</p></details>
+    <details class="group bg-white/5 border border-white/10 rounded-xl p-5"><summary class="font-semibold cursor-pointer list-none flex justify-between">Vou sair com algo pronto? <span class="text-primary group-open:rotate-45 transition">+</span></summary><p class="text-neutral-300 text-sm mt-3">Sim. Você sai com um SaaS de assistentes com IA publicado em produção, e acesso vitalício ao código e prompts.</p></details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="border-t border-white/10 mesh">
+  <div class="max-w-3xl mx-auto px-5 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-3">20 vagas. Quando fechar, fechou.</h2>
+    <p class="text-neutral-300 mb-7">Garanta a sua agora pela oferta de lançamento de R$ 3.000.</p>
+    <a href="#oferta" class="cta inline-block bg-primary text-black font-extrabold text-lg px-10 py-4 rounded-xl">Garantir minha vaga →</a>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-8 text-center text-neutral-500 text-sm">
+  <p>Imersão Vibe Coding · Do Zero ao SaaS com IA · 2026</p>
+  <p class="mt-2"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p>
+</footer>
+
+</body>
+</html>
