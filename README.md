@@ -11,8 +11,9 @@ Três versões de landing page de vendas para a **Imersão Vibe Coding** (Do Zer
 | [`versao-1.html`](versao-1.html) | **Conversão direta** — oferta, escassez, FAQ de objeções | tráfego quente / anúncio |
 | [`versao-2.html`](versao-2.html) | **Storytelling** — jornada antes→depois, editorial, depoimentos | desejo e confiança |
 | [`versao-3.html`](versao-3.html) | **Visual ousado** — hero animado, glass, contadores, motion | impacto imediato |
+| [`versao-4.html`](versao-4.html) | **Imersão presencial (formato completo, recomendada)** — hero com vídeo, datas/local, "Acesso à Imersão Presencial", jornada dia a dia, barra de vagas | página de vendas pronta |
 
-`index.html` é um seletor que mostra as 3. Quando decidir a versão final, **renomeie o arquivo dela para `index.html`**.
+`index.html` é um seletor que mostra as 4. Quando decidir a versão final, **renomeie o arquivo dela para `index.html`**.
 
 ## Oferta (já configurada nas páginas)
 
