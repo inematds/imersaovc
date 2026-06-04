@@ -9,9 +9,9 @@ Como criar, alterar, listar e excluir os **links de pagamento** (`paymentLinks`)
 | Header de auth | `access_token: <SUA_CHAVE>` |
 | Base produção | `https://api.asaas.com/v3` |
 | Base sandbox | `https://api-sandbox.asaas.com/v3` |
-| Onde está a chave (prod) | `inemabk/inemaonline/worker/.dev.vars` → `ASAAS_API_KEY` |
+| Onde fica a chave | no arquivo de variáveis de ambiente do worker (`.dev.vars` / `wrangler secret`) — **fora deste repo** |
 
-> A chave de produção começa com `$aact_prod...`. **Nunca** comitar a chave. Teste em sandbox antes de mexer em produção.
+> A chave de produção começa com `$aact_prod...`. **Nunca** comitar a chave nem colocá-la neste repositório público. Teste em sandbox antes de mexer em produção.
 
 Convenção do prefixo (vista em `inemaonline/worker/src/asaas.ts`): prod = `$aact_M` / `$aact_prod`, sandbox = `$aact_YT`.
 
@@ -118,9 +118,8 @@ Nas landings (`versao-*.html`), o botão usa o link de **R$ 3.000**.
 ## 7. Snippet Node (lê a chave do .dev.vars, não imprime a chave)
 
 ```js
-const fs = require('fs');
-const env = fs.readFileSync('inemabk/inemaonline/worker/.dev.vars', 'utf8');
-const key = env.match(/^ASAAS_API_KEY=(.*)$/m)[1].trim().replace(/^["']|["']$/g, '');
+// a chave vem de variável de ambiente — NUNCA hardcode no código
+const key = process.env.ASAAS_API_KEY;
 const base = 'https://api.asaas.com/v3';
 const H = { access_token: key, 'Content-Type': 'application/json' };
 
