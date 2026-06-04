@@ -1,6 +1,6 @@
 # Imersão Vibe Coding — Landing Promocional
 
-Três versões de landing page de vendas para a **Imersão Vibe Coding** (Do Zero ao SaaS com IA em 3 dias, presencial em Itaguaí — RJ).
+Quatro versões de landing page de vendas para a **Imersão Vibe Coding** (Do Zero ao SaaS com IA em 3 dias, presencial em Itaguaí — RJ).
 
 🔗 **Online (GitHub Pages):** https://inematds.github.io/imersaovc/
 
@@ -18,33 +18,26 @@ Três versões de landing page de vendas para a **Imersão Vibe Coding** (Do Zer
 ## Oferta (já configurada nas páginas)
 
 - De **R$ 4.800** por **R$ 3.000** (oferta de lançamento)
+- **Pagamento:** cartão de crédito em **até 6x**
 - **20 vagas** por imersão
-- **Dupla ou mais (2+):** R$ 2.700 por pessoa
 
 ## Pagamento via Asaas
 
-Mesmo padrão usado no **inema.vip**: o botão de CTA aponta direto para um **link de checkout do Asaas** (`https://www.asaas.com/c/XXXX`).
+Mesmo padrão usado no **inema.vip**: o botão de CTA aponta direto para o **link de checkout do Asaas** (`https://www.asaas.com/c/XXXX`).
 
-### Como ativar (obrigatório antes de vender)
+**Já configurado.** O botão "Garantir vaga" das 4 versões aponta para o link real:
 
-1. No painel do Asaas, crie um **Link de Pagamento**:
-   - **Individual:** valor R$ 3.000.
-   - **Dupla:** valor R$ 2.700 (por pessoa). Pode ser um link separado ou usar o campo de **desconto** do próprio Asaas.
-2. Copie a URL gerada (formato `https://www.asaas.com/c/...`).
-3. Em cada `versao-*.html`, substitua os placeholders:
-   - `https://www.asaas.com/c/SEU_LINK_INDIVIDUAL` → link de R$ 3.000
-   - `https://www.asaas.com/c/SEU_LINK_DUPLA` → link de R$ 2.700/pessoa
-4. Commit + push. O GitHub Pages atualiza sozinho.
+- R$ 3.000 (cartão, até 6x) → `https://www.asaas.com/c/hkzrb361iks95c50`
 
-> Procure por `SEU_LINK_INDIVIDUAL` e `SEU_LINK_DUPLA` nos arquivos.
+Para trocar o link, basta substituir essa URL nos `versao-*.html`.
 
 ### Cobrança dinâmica (opcional)
 
-Se quiser gerar cobranças via API (customer + PIX/cartão/boleto, desconto automático para 2+, webhook de confirmação), o cliente de referência já existe no projeto `inemaonline` (`worker/src/asaas.ts`): cria customer, cria payment com campo `discount` (`FIXED`/`PERCENTAGE`), gera QR Code PIX e processa webhook `PAYMENT_CONFIRMED`/`PAYMENT_RECEIVED`.
+Para gerar cobranças via API (customer + payment, webhook de confirmação, controle automático de vagas), o cliente de referência já existe em `inemaonline` (`worker/src/asaas.ts`): cria customer, cria payment, processa webhook `PAYMENT_CONFIRMED`/`PAYMENT_RECEIVED`.
 
 ## Editar datas/local
 
-As páginas usam o local **Itaguaí — RJ, Rua Prefeito José Maria de Brito, 251** e o texto _"Próxima turma — datas a confirmar"_. Procure pelos comentários `<!-- EDITAR DATAS -->` para colocar as datas reais.
+As páginas usam o local **Itaguaí — RJ, Rua Prefeito José Maria de Brito, 251** e o texto _"Próxima turma — datas a confirmar"_. Procure pelos comentários `EDITAR-DATAS` para colocar as datas reais.
 
 ## Stack
 
