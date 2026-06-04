@@ -31,6 +31,8 @@ Mesmo padrão usado no **inema.vip**: o botão de CTA aponta direto para o **lin
 
 Para trocar o link, basta substituir essa URL nos `versao-*.html`.
 
+> 📄 **Como gerenciar os links pela API** (criar, mudar forma de pagamento, parcelas, valor, excluir): [`docs/asaas-links-pagamento.md`](docs/asaas-links-pagamento.md).
+
 ### Cobrança dinâmica (opcional)
 
 Para gerar cobranças via API (customer + payment, webhook de confirmação, controle automático de vagas), o cliente de referência já existe em `inemaonline` (`worker/src/asaas.ts`): cria customer, cria payment, processa webhook `PAYMENT_CONFIRMED`/`PAYMENT_RECEIVED`.
