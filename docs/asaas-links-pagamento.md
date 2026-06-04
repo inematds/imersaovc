@@ -115,7 +115,7 @@ Todos `CREDIT_CARD` + `INSTALLMENT`, ativos:
 
 Nas landings (`versao-*.html`), o botão usa o link de **R$ 3.000**.
 
-## 7. Snippet Node (lê a chave do .dev.vars, não imprime a chave)
+## 7. Snippet Node (chave via variável de ambiente, nunca hardcoded)
 
 ```js
 // a chave vem de variável de ambiente — NUNCA hardcode no código
